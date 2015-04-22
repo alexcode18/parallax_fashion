@@ -1,0 +1,127 @@
+body {
+	font-family: sans-serif;
+}
+
+.slide {
+	border: 0px solid black;
+	background: white;
+	width: 100%;
+}
+
+header {
+	background: rgba(0,0,0,.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#logo {
+	font-size: 20pt;
+	letter-spacing: 5px;
+	font-variant: small-caps;
+	float: left;
+}
+
+#logo,
+nav {
+	padding: 20px 30px;
+	font-variant: small-caps;
+}
+
+nav {
+	font-size: 14pt;
+	letter-spacing: 3px;
+}
+	
+
+#logo,
+h3 {
+	color: white;
+}
+
+h3 {
+	font-size: 40pt;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	/*text-shadow: 0px 0px 3px black;*/
+}
+
+.slide_header {
+	padding: 300px 50px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*background-image: url("http://www.thecutielicious.com/wordpress/wp-content/uploads/2013/09/22.jpg");*/
+}
+
+header li {
+	display: inline-block;
+	margin: 10px;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav {
+	float: right;
+	color: white;
+}
+
+.active {
+	border-bottom: 2px solid white;
+}
+
+#slide_container {
+	margin-top: 0;
+}
+
+#slide_intro .slide_header {
+	padding: 300px 50px;
+	background-position: bottom;
+	background-image: url('http://www.fabishoes.it/wp-content/uploads/2014/08/FABI_donna_0016.jpg');
+}
+
+#slide1 .slide_header {
+	/*background-position: 50% 80%;*/
+	background-image: url('http://media.belenechandia.com/2011/03/Satchel-14-black-and-white-sketch1.jpg');
+}
+
+#slide1 .slide_header h3 {
+	color: black;
+}
+
+#slide2 .slide_header {
+	background-image: url('http://www.pureleathershop.com/wp-content/uploads/2014/07/swatch1.jpg');
+}
+
+#slide3 .slide_header {
+	background-image: url('http://upload.wikimedia.org/wikipedia/commons/6/61/Leather_dyeing_vats_in_Fes.jpg');
+}
+
+#slide4 .slide_header {
+	background-image: url('http://i.ytimg.com/vi/l-aCu5o0Aj8/maxresdefault.jpg');
+}
+
+#slide5 .slide_header {
+	background-image: url('http://cdn.shopify.com/s/files/1/0174/5220/files/Process_5.jpg?4877');
+}
+
+#slide6 .slide_header {
+	background-image: url('http://marieclaire.media.ipcdigital.co.uk/11116/0000788e5/8767/RosieHW-MS-Advert-thumbnail.jpg');
+	background-position: 50% 20%;
+}
+
+.description {
+	padding: 60px 80px;
+}
+
+p {
+	font-size: 14pt;
+	line-height: 30px;
+	font-family: serif;
+}
