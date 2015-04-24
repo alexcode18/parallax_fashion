@@ -21,19 +21,9 @@ header {
 	letter-spacing: 5px;
 	font-variant: small-caps;
 	float: left;
-}
-
-#logo,
-nav {
 	padding: 20px 30px;
 	font-variant: small-caps;
 }
-
-nav {
-	font-size: 14pt;
-	letter-spacing: 3px;
-}
-	
 
 #logo,
 h3 {
@@ -45,7 +35,6 @@ h3 {
 	text-align: center;
 	letter-spacing: 10px;
 	text-transform: uppercase;
-	/*text-shadow: 0px 0px 3px black;*/
 }
 
 .slide_header {
@@ -54,12 +43,10 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /*background-image: url("http://www.thecutielicious.com/wordpress/wp-content/uploads/2013/09/22.jpg");*/
 }
 
 header li {
 	display: inline-block;
-	margin: 10px;
 }
 
 header a {
@@ -70,10 +57,27 @@ header a {
 nav {
 	float: right;
 	color: white;
+	margin: 25px;
+	margin-right: 40px;
+	font-size: 12pt;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+#nav_toggle {
+	display: none;
 }
 
 .active {
-	border-bottom: 2px solid white;
+	border-bottom: 3px solid white;
+}
+
+nav li a {
+	padding: 20px 8px;
+}
+
+nav li a:hover {
+	border-bottom: 3px solid darkgrey;
 }
 
 #slide_container {
@@ -87,7 +91,6 @@ nav {
 }
 
 #slide1 .slide_header {
-	/*background-position: 50% 80%;*/
 	background-image: url('http://media.belenechandia.com/2011/03/Satchel-14-black-and-white-sketch1.jpg');
 }
 
@@ -124,4 +127,35 @@ p {
 	font-size: 14pt;
 	line-height: 30px;
 	font-family: serif;
+}
+
+
+@media only screen and (max-width : 900px) {
+	nav {
+		width: 100%;
+		margin: 0;
+		padding: 10px 0;
+		display: none;
+	}
+
+	nav li {
+		display: block;
+		text-align: center;
+		padding: 10px;
+	}
+
+	nav li a {
+		max-width: 900px;
+		padding: 10px;
+	}
+
+	#nav_toggle {
+		float: right;
+		font-size: 30px;
+		color: white;
+		padding: 14px 20px;
+		display: block;
+		border: 1px solid darkgrey;
+		cursor: pointer;
+	}
 }
