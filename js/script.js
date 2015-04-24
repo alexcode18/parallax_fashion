@@ -6,6 +6,7 @@ $(function() {
 	$('body').on('click', '#nav li a', toggleNavLi);
 	$('body').on('click', '#nav_toggle', toggleNav);
 	
+	// Creates instances of slides and slide header buttons
 	for (var i = 1; i <= slideArray.length; i++) {
 		var navHtml = '<li><a href="#slide' + i + '" title="Slide ' + i + '">' + slideArray[i - 1] + '</a></li>';
 		var slideHtml = '<div class="slide" id="slide' + i + '"><div class="slide_header"><h3>' + slideArray[i - 1] + '</h3></div><div><p class="description"></p></div></div>';
@@ -14,6 +15,8 @@ $(function() {
 	}
 
 	$('.description').text(desc);
+
+	//sends user to correct scroll position on page, and highlights the header button of that section.
   $('a[href*=#]').each(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname && this.hash.replace(/#/,'') ) {
 			var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
@@ -27,6 +30,9 @@ $(function() {
 		}
   });
 
+  // Upon page resize, the browser checks its width. 
+  // If that width is greater than 900, 
+  // then make sure the nav bar is displayed.
   $(window).resize(function(){
 		if ($(window).width() >= 900){	
 			$("nav").show();
@@ -37,6 +43,7 @@ $(function() {
 	});
 });
 
+// show or hide nav button effect when selected
 function toggleNavLi(offset) {
 	$('#nav li a').removeClass('active');
 	$(this).addClass('active');
@@ -44,6 +51,7 @@ function toggleNavLi(offset) {
 	return false;
 }
 
+// show or hide nav bar when under 900px
 function toggleNav() {
 	$('nav').slideToggle();
 	if ($('#nav_toggle').text() == 'x') {
